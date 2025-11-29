@@ -1,0 +1,69 @@
+
+
+
+
+# ============================================
+# CONFIGURACIÓN AVANZADA DE NANO
+# ============================================
+
+# === APARIENCIA ===
+set linenumbers              # Mostrar números de línea
+set mouse                    # Habilitar soporte de mouse
+set constantshow             # Mostrar siempre posición del cursor
+set minibar                  # Barra inferior minimalista (nano 5.0+)
+
+# === COLORES DE INTERFAZ ===
+set titlecolor brightwhite,blue
+set statuscolor brightwhite,cyan
+set errorcolor brightwhite,red
+set selectedcolor black,lightwhite
+set stripecolor ,yellow
+set numbercolor brightcyan
+set keycolor brightcyan
+set functioncolor brightgreen
+
+# === TABULACIÓN ===
+set tabsize 4                # 4 espacios por tab
+set tabstospaces             # Convertir tabs a espacios
+set autoindent               # Auto-indentación
+
+# === BÚSQUEDA ===
+set regexp                   # Expresiones regulares en búsqueda
+set smarthome                # Inicio inteligente de línea
+
+# === EDICIÓN ===
+set softwrap                 # Ajuste suave de líneas largas
+set atblanks                 # Romper líneas en espacios
+set wordchars "_"            # Caracteres considerados parte de palabras
+set zap                      # Ctrl+U borra línea completa
+
+# === FUNCIONALIDADES ===
+set multibuffer              # Permitir múltiples buffers
+set historylog               # Guardar historial de búsqueda
+
+# === BACKUP (opcional, descomenta si quieres) ===
+# set backup
+# set backupdir "~/.nano/backups"
+
+
+# === ATAJOS PERSONALIZADOS ===
+bind ^S savefile main        # Ctrl+S = Guardar
+bind ^Q exit all             # Ctrl+Q = Salir
+bind ^F whereis all          # Ctrl+F = Buscar
+bind ^H help all             # Ctrl+H = Ayuda
+bind ^Z undo main            # Ctrl+Z = Deshacer
+bind ^Y redo main            # Ctrl+Y = Rehacer
+bind ^C copy main            # Ctrl+C = Copiar
+bind ^X cut main             # Ctrl+X = Cortar
+bind ^V paste all            # Ctrl+V = Pegar
+bind ^A mark main            # Ctrl+A = Seleccionar todo
+
+# === MOSTRAR ESPACIOS/TABS (opcional) ===
+# set whitespace "»·"
+
+# === CORRECTOR ORTOGRÁFICO (opcional) ===
+# set speller "aspell -x -c"
+
+# Mostrar el título del archivo en la barra superior
+set titlecolor brightwhite,blue
+include "~/.nano/themes/nanorc/*.nanorc"

@@ -1,0 +1,16 @@
+
+# Cache
+*.cache
+*.log
+
+# Backup
+*.backup
+*.bak
+*~
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Específicos
+config/zsh/.zcompdump*
